@@ -14,6 +14,7 @@ class ResumableTimer():
         self.elapsed_time = 0
         
     def start(self):
+        self.elapsed_time = 0
         self.start_time = time.time()
 
     def pause(self):
@@ -25,3 +26,4 @@ class ResumableTimer():
 
     def get_actual_time (self):
         return self.elapsed_time
+
